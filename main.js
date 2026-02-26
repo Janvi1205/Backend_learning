@@ -1,0 +1,7 @@
+//how to execute a file in node js
+// in terminal write node filename
+//example.....node main
+ const math=require("./math")
+
+console.log("hello node js ")//hello node js
+console.log(math.add(1,2));
