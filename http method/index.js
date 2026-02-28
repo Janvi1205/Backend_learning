@@ -8,9 +8,13 @@ const myserver=http.createServer((req,res)=>{ //jab bhi koi request ayega client
     fs.appendFile('./log.txt',log,(err,data)=>{ //we created a log file jab bhi koi req ayega that will be logged in log.txt
          switch(req.url)
          {
-            case '/':res.end("Homepage");
+            case '/':
+                if(req.method==="GET")res.end("Homepage");
             break
             case '/about': res.end("My name is janvi");
+            case '/signup':
+                if(req.method==="GET")res.end("signup page");
+                else if(req.method==="POST") res.end("success");
             default: res.end("Welcome to my server")
          }
 

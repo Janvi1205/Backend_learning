@@ -14,13 +14,3 @@
 1772266937680:GET:/favicon.icoNew request
 1772266939503:GET:/New request
 1772266939549:GET:/favicon.icoNew request
-1772267644368:GET:/New request
-1772267644424:GET:/favicon.icoNew request
-1772267650721:GET:/signupNew request
-1772267650761:GET:/favicon.icoNew request
-1772267661653:GET:/signupNew request
-1772267661694:GET:/favicon.icoNew request
-1772267693281:GET:/signupNew request
-1772267693347:GET:/favicon.icoNew request
-1772267694704:GET:/signupNew request
-1772267694754:GET:/favicon.icoNew request
