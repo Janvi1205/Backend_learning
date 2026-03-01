@@ -8,7 +8,7 @@ const myserver=http.createServer((req,res)=>{ //jab bhi koi request ayega client
     fs.appendFile('./log.txt',log,(err,data)=>{ //we created a log file jab bhi koi req ayega that will be logged in log.txt
          switch(req.url)
          {
-            case '/':res.end("Homepage");
+            case '/':res.end("Welcome to my server");
             break
             case '/about': res.end("My name is janvi");
             default: res.end("Welcome to my server")
@@ -18,6 +18,6 @@ const myserver=http.createServer((req,res)=>{ //jab bhi koi request ayega client
    
 })
 
-myserver.listen(8000,()=>{console.log("server started")})//this 8000 is the port on whihc i want to run my server 
+myserver.listen(8001,()=>{console.log("server started")})//this 8000 is the port on which i want to run my server 
 
-                                                         //the callback fcuntion written here is optional..that is for me to know if evything is working fine 
+//the callback fcuntion written here is optional..that is for me to know if evything is working fine 

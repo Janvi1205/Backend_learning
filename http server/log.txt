@@ -24,3 +24,11 @@
 1772267693347:GET:/favicon.icoNew request
 1772267694704:GET:/signupNew request
 1772267694754:GET:/favicon.icoNew request
+1772275400623:GET:/New request
+1772275400769:GET:/favicon.icoNew request
+1772275491465:GET:/New request
+1772275491516:GET:/favicon.icoNew request
+1772275593225:GET:/New request
+1772275593304:GET:/favicon.icoNew request
+1772275625275:GET:/New request
+1772275625351:GET:/favicon.icoNew request
