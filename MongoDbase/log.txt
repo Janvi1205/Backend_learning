@@ -1,0 +1,4 @@
+in Mongoose we have schema
+schema-here we defone the structure of our data
+  schema-model
+  using this model we  do crud on data 

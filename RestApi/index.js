@@ -22,6 +22,7 @@ app.post('/api/user',(req,res)=>{
      users.push({...body,id:users.length+1})
      fs.writeFile('./Mock_data.json',JSON.stringify(users),(err,data)=>{
             return res.json({status:"pending"})
+            
      })
 
    
