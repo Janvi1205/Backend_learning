@@ -6,6 +6,11 @@ router.get("/",handleGetAllUser)
 
 router.get("/:id", handleUserById) 
 
-router.post("/", handleCreatingUser)
+router.post("/", handleCreatingUser);
+ 
 
 module.exports=router;
+
+
+
+
