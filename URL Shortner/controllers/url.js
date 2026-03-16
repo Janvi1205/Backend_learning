@@ -15,7 +15,10 @@ async function generateNewUrl(req,res){
         visitHistory:[]
 
     })
-     return res.json({id:shortId})
+    return res.render("home",{
+        id:shortId
+    })
+ 
    
 }
 
