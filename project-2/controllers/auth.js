@@ -6,11 +6,11 @@ const registerUser = async (req, res) => {
     try {
         const result = registerSchema.safeParse(req.body);//ask the zod if it Does this request follow the rules I defined?"
         
-        if (!result.success) {                                   //req.body
-             return res.status(400).json({                        // ↓
+        if (!result.success) {                                     //req.body
+             return res.status(400).json({                         // ↓
               message: "Invalid registration data",
-                errors: result.error.issues                       //Zod safeParse()
-                                                                      //  ↓
+                errors: result.error.issues                        //Zod safeParse()
+                                                                   //  ↓
               });                                                    //valid?
            }                                                          // ↓
                                                                    //result.data
@@ -51,6 +51,28 @@ const registerUser = async (req, res) => {
             message: "Server error"
         });
     }
+
+
+
 };
 
-module.exports = { registerUser };
+const loginUser= async(req,res)=>{
+
+    try{
+        const{email,password}=req.body
+        console.log(email,password)
+
+        res.status(200).json({
+            message:"Login request received"
+        })
+    }catch(error){
+        console.log(error);
+        res.status(500).json({
+            message:"server error"
+        })
+
+    }
+
+}
+
+module.exports = { registerUser,loginUser };
